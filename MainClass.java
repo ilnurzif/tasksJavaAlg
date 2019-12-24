@@ -274,7 +274,7 @@ class MyDoubleQueue<T> extends MyQueue<T> {
     public void insertLeft(T el) {
         if (isFull())
             throw new StackOverflowError();
-        begin_pos = nextIndex(begin_pos);
+        begin_pos = prevIndex(begin_pos);
         arr[begin_pos] = el;
         size++;
     }
