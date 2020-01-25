@@ -36,7 +36,7 @@ public class Main {
 
         System.out.println(map.get(4));
 
-        myHashMap.remove(4);
+        map.remove(4);
         System.out.println(map.get(4));
         System.out.println(map.contains(7));
 
